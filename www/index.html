@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+
+<head>
+  <!--
+        Customize this policy to fit your own app's needs. For more guidance, see:
+            https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
+        Some notes:
+            * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+            * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+            * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+                * Enable inline JS: add 'unsafe-inline' to default-src
+        -->
+  <meta name="format-detection" content="telephone=no">
+  <meta name="msapplication-tap-highlight" content="no">
+
+  <!-- Obrigatorio por!! -->
+  <meta charset="UTF-8">
+
+  <!-- Aplicavel ao Iphone X-->
+  <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width,viewport-fit=cover">
+
+  <!-- CSS -->
+  <link rel="stylesheet" type="text/css" href="css/index.css">
+
+  <title>Heart View</title>
+
+  <!-- Onsen UI CSS -->
+  <link rel="stylesheet" href="css/Onsen/onsenui.css" />
+  <link rel="stylesheet" href="css/Onsen/onsen-css-components.css" />
+  <!-- Onsen UI JS -->
+  <script src="js/Onsen/onsenui.js"></script>
+
+</head>
+
+<body>
+  <ons-page>
+
+    <ons-tabbar swipeable position="auto">
+      <ons-tab page="tab1.html" name="Heart View" icon="ion-home, material:md-home" active>
+      </ons-tab>
+      <ons-tab page="tab2.html" name="Sobre" icon="md-info" active-icon="md-info">
+
+
+      </ons-tab>
+    </ons-tabbar>
+
+
+  </ons-page>
+
+
+  <template id="tab1.html">
+    <ons-page id="Tab1">
+
+      <!-- Onsen UI Conteudo Pagina -->
+
+
+      <!-- Colunas para imagem ficar centrada -->
+      <ons-row>
+        <ons-col></ons-col>
+        <ons-col style="background-color: transparent;">
+          <img id="originalPicture" class="logo centered" alt="" src="img/icon.png" style="background-color: transparent;" />
+        </ons-col>
+        <ons-col></ons-col>
+      </ons-row>
+
+      <!-- Esconder Bottoes enquanto não houver foto -->
+      <div id="bottonShow" class="hide">
+
+        <!-- Bottoes de Partilha -->
+        <ons-fab position="right bottom" style="background:white;">
+          <ons-button icon="md-facebook" style="background:white; color: #e26969;" id="shareFacebook"></ons-button>
+        </ons-fab>
+
+        <ons-fab position="left bottom" style="background:white;">
+          <ons-button icon="md-instagram" style="background:white; color: #e26969;" id="shareInstagram"></ons-button>
+        </ons-fab>
+
+      </div>
+
+      <!-- Botão tirar foto -->
+      <div id="bottonCameraShow" class="hide">
+
+        <ons-fab position="center bottom" style="background:white;">
+          <ons-button icon="md-camera" style="background:white; color: #e26969;" id="startCameraAboveButton"></ons-button>
+        </ons-fab>
+      </div>
+
+
+    </ons-page>
+  </template>
+
+  <template id="tab2.html">
+    <ons-page id="Tab2" style="color:white;">
+
+      <ons-toolbar swipeable position="auto" style="top: 1.25rem; 
+           top: constant(safe-area-inset-top); 
+         top: env(safe-area-inset-top);">
+        <div class="center">
+          <i class="clSalmon">
+            Sobre
+          </i>
+        </div>
+      </ons-toolbar>
+
+      <!-- Onsen UI Conteudo Pagina -->
+      <div style="padding-top: 15%;"></div>
+
+
+      <div style="font-weight: 900;">
+
+
+        <ons-row>
+          <ons-col></ons-col>
+          <ons-col>
+            <h2 class="card__title" style="font-size: 6.5vw;">Heart View</h2>
+          </ons-col>
+          <ons-col></ons-col>
+
+        </ons-row>
+
+
+        <div style="font-size: 3.5vw;">
+          <ons-row align="center">
+            <ons-col width="10%"></ons-col>
+            <ons-col>
+              Aplicação criada no ambito académico do 2ºAno de Sistemas e Multimedia.
+              <br/>Para avaliação final da cadeira de Ferramentas Multimedia.
+              <br/>
+            </ons-col>
+            <ons-col width="10%"></ons-col>
+          </ons-row>
+
+          <ons-row align="center">
+            <ons-col>
+              <div class="logo" style="min-width: 150px; background: transparent; width: 30vw">
+                <img src="img/icon.png">
+              </div>
+            </ons-col>
+            <ons-col>
+              <br/> Diogo Castro Silva
+              <br/> Paulo Francisco Pinto
+              <br/> Ricardo Maia Gouveia
+            </ons-col>
+          </ons-row>
+        </div>
+      </div>
+    </ons-page>
+  </template>
+
+
+
+  <!-- JS -->
+  <script type="text/javascript" src="cordova.js"></script>
+  <script type="text/javascript" src="js/index.js"></script>
+</body>
+
+</html>
