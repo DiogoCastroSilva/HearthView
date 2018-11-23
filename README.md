@@ -27,7 +27,9 @@ It is not possible to use your computers webcam during testing in the simulator,
 ```
 # org.awokenwell.proximity
 
-This plugin provides access to the device's (IR) proximity sensor. This sensor is typically used in applications to prevent touch events on the screen when the device is held close to one's face.
+This plugin provides access to the device's (IR) proximity sensor.
+This sensor is typically used in applications to prevent touch events on the screen when the device
+is held close to one's face.
 
 ## Installation
 
@@ -45,7 +47,8 @@ Cordova plugin that allows camera interaction from Javascript and HTML.
 
 # cordova-plugin-splashscreen
 
-  This plugin is required to work with splash screens. This plugin displays and hides a splash screen during application launch.
+  This plugin is required to work with splash screens. This plugin displays and hides a splash screen 
+  during application launch.
   
 ## Installation
 
