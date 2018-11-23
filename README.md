@@ -3,6 +3,13 @@ Cordova Web APP
 
 Cordova project to take pictures of the surronding when the proximity sensor is near your hearth.
 
+
+## Images
+
+
+        
+      ![Alt text](HearthView/Images/MockUp Relatorio.png?raw=true "Title")
+
 ## Install
 ```
 cordova platform add android
