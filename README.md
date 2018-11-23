@@ -6,9 +6,8 @@ Cordova project to take pictures of the surronding when the proximity sensor is 
 
 ## Images
 
-
-        
-      ![Alt text](/Images/MockUp Relatorio.png?raw=true "Title")
+![Cat](https://github.com/DiogoCastroSilva/HearthView/blob/master/Images/MockUp%20Relatorio.png)
+      
 
 ## Install
 ```
